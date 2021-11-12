@@ -1,0 +1,437 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+
+}
+
+body{
+   background: #0f0e0e;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*new nav*/
+
+.nav-toggle{
+	display:none;
+}
+
+.nav-toggle-label{
+	position: absolute;
+	top:4px;
+	left: 0;
+	margin-left: 1em;
+	height: 100%;
+	display:flex;
+	align-items: center;
+	cursor: pointer;
+    margin-top:-790px;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after{
+	display:block;
+	background:#048a81;
+	height: 3px;
+	width:2.5rem;
+	border-radius:2px;
+	position: relative;
+
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after{
+	content: '';
+	position:absolute;
+}
+
+.nav-toggle-label span::before{
+	top: 7px;
+	height:3px;
+}
+
+.nav-toggle-label span::after{
+	bottom: 7px;
+	height:3px;
+	
+	
+	
+}
+
+nav{
+	position:relative;
+    z-index: 1000;
+	text-align: left;
+	top:95%;
+	left:0;
+	background-color: #048a81d0;
+	width:10em;
+	height:320px;
+	transform: scale(1,0);
+	transform-origin: top;
+	transition: transform 400ms ease-in-out;
+	
+}
+
+nav ul{
+	margin:0;
+	padding:0;
+
+	
+}
+
+nav li{
+	
+	margin-bottom: 1em;
+	margin-left: 1em;
+    font-size: 1.6rem;
+	font-family: alegreya sans sc, sans-serif;
+    color: #ffffff;
+    padding-top: 10px;
+    margin-top:35px;
+    font-weight: 900;
+    
+}
+
+
+
+nav a{
+	color: #feefdd;
+
+	text-transform:uppercase;
+	opacity: 0;
+	transition: opacity 150ms ease-in-out ;
+}
+
+nav li:hover{
+	color:#0f0e0e;
+}
+
+.nav-toggle:checked ~ nav{
+	transform: scale(1,1);
+	
+}
+
+.nav-toggle:checked ~ nav a{
+	opacity: 1;
+	transition: opacity 250ms ease-in-out 250ms;
+	
+}
+
+/*end new nav*/
+
+
+.bannerlogo{
+    display: block;
+  
+    position:absolute;
+    width:100%;
+    margin-top: -15em;
+}
+
+.subtitle{
+    color:#048a81;
+    font-family: alegreya sans sc, sans-serif;
+    font-size: 1.5rem;
+    margin-top: -150px;
+    font-weight: 800;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.featured{
+    color:#fff;
+    text-align: center;
+    font-family: alegreya sans sc, sans-serif;
+    font-size: 3rem;
+    text-decoration: underline #fff;
+    font-weight: 900;
+    
+}
+
+
+
+.flex_container1{
+    display:flex ;
+    flex-direction: column;
+}
+
+.devonbw{
+    width: 200px;
+    margin-top:8em;
+    padding:10px;
+    padding-bottom:100px;
+
+}
+
+#position{
+    margin-left:255px;
+    margin-top:-255px;
+}
+
+.paragraph{
+    color:#fff;
+    font-family: alegreya sans sc, sans-serif;
+    font-size:1.6rem;
+    font-weight: 500;
+}
+
+.suitsale{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:460px;
+    padding-top:200px;
+    padding-bottom: 100px;
+}
+
+
+.practice{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    padding-left: 100px;
+    align-items:center;
+    justify-content: center;
+   
+
+}
+
+.newariv{
+    margin-top:-50px;
+    text-align:center;
+    font-family: alegreya sans sc, sans-serif;
+    background:#fff;
+    color:#0f0e0e;
+    font-size: 2.3rem;
+}
+
+
+.newpara1,.newpara2,.newpara3,.newpara4{
+    font-size:1.3rem;
+    padding-bottom:20px;
+    text-align:justify;
+    padding:10px;
+    font-family: alegreya sans sc, sans-serif;
+    color:#feefdd;
+    font-weight: 800;
+}
+
+.newarv1,.newarv2,.newarv3,.newarv4{
+    width:220px;
+    padding:10px;
+    margin-top:10px;
+    
+}
+
+
+
+
+.flex2{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
+}
+
+footer{
+    text-align:center;
+    font-family: alegreya sans sc, sans-serif;
+    color:#feefdd;
+    font-size: 1rem;
+}
+
+
+
+
+.footpara{
+    padding:15px;
+    font-family: alegreya sans sc, sans-serif;
+    font-size:1.2rem;
+}
+
+.flex3{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.logos{
+    padding:5px;
+    width:30px;
+    padding-bottom: 15px;
+}
+
+footer{
+    
+    z-index: -100;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:120px;
+    background:#048a81af;
+    
+    clear:both;
+    border-top:2px solid #0f0e0e;
+   
+}
+
+@media only screen and (min-width: 40em) {
+
+    .nav-toggle{
+        display: none;
+    }
+
+    .nav-toggle-label{
+      display: none;
+    }
+
+    header{
+		display:grid;
+		grid-template-columns:  auto minmax(600px)  ;
+        background: #048a81;
+	}
+
+	nav{
+		all:unset;
+		grid-column: 1 / 5;
+		display:flex;
+		justify-content: flex-start;
+       
+		
+    
+
+	}
+
+	nav a{
+		opacity:1;
+
+	}
+
+	nav ul{
+		display:flex;
+		justify-content: flex-end;
+        margin-left:20px;
+        
+	}
+
+	nav li{
+		margin-left:1em;
+		margin-bottom:0;
+        font-size: 2rem;
+	}
+
+    .bannerlogo{
+        display: block;
+        position:absolute;
+        width:100%;
+        margin-top: 5em;
+    }
+
+    .featured{
+        color:#fff;
+        text-align: center;
+        font-family: alegreya sans sc, sans-serif;
+        font-size: 4rem;
+        text-decoration: underline #fff;
+        font-weight: 900;
+        margin-top: 400px;
+    }
+
+    
+    .subtitle{
+        color:#048a81;
+        font-family: alegreya sans sc, sans-serif;
+        font-size: 1.5rem;
+        margin-top: 190px;
+        font-weight: 800;
+        text-align: center;
+        padding-bottom: 100px;
+    }
+
+    .flex_container1{
+        display:flex ;
+        flex-direction: row;
+        padding:50px;
+    
+    }
+
+    .devonbw{
+        width: 450px;
+        margin-top:8em;
+        padding:20px;
+        padding-bottom:100px;
+
+    }
+
+    #position{
+        margin-left:500px;
+        margin-top:-255px;
+    }
+
+    .paragraph{
+        color:#fff;
+        font-family: alegreya sans sc, sans-serif;
+        font-size:3rem;
+        font-weight: 500;
+    }
+
+    .suitsale{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width:600px;
+        padding-top:200px;
+        padding-bottom: 100px;
+    }
+
+    .practice{
+        display:flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        padding-left: 10px;
+        align-items: center;
+        justify-content: center;
+        
+  
+    
+
+    }
+
+    .newariv{
+        margin-top:-50px;
+        text-align:center;
+        font-family: alegreya sans sc, sans-serif;
+        background:#fff;
+        color:#0f0e0e;
+        font-size: 3rem;
+        
+    }
+
+
+    .newpara1,.newpara2,.newpara3,.newpara4{
+        font-size:1.2rem;
+        padding-bottom:20px;
+        text-align:justify;
+        padding:10px;
+        font-family: alegreya sans sc, sans-serif;
+        color:#feefdd;
+        font-weight: 800;
+    }
+
+  
+
+   
+
+
+    
+
+
+    }
