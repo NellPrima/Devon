@@ -30,7 +30,7 @@ html{
 	display:flex;
 	align-items: center;
 	cursor: pointer;
-    margin-top:-790px;
+        margin-top:-600px;
 }
 
 .nav-toggle-label span,
@@ -88,10 +88,10 @@ nav ul{
 
 nav li{
 	
-	margin-bottom: 1em;
-	margin-left: 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
     font-size: 1.6rem;
-	font-family: alegreya sans sc, sans-serif;
+    font-family: alegreya sans sc, sans-serif;
     color: #ffffff;
     padding-top: 10px;
     margin-top:35px;
@@ -103,7 +103,6 @@ nav li{
 
 nav a{
 	color: #feefdd;
-
 	text-transform:uppercase;
 	opacity: 0;
 	transition: opacity 150ms ease-in-out ;
